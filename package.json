@@ -1,9 +1,9 @@
 {
   "name": "@nodestrap/utilities",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Common utility functions.",
   "type": "module",
-  "main": "dist/utilities.jsx",
+  "main": "dist/utilities.js",
   "types": "dist/utilities.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/nodestrap/utilities#readme",
   "dependencies": {
-    "@types/react": "^17.0.35",
+    "@types/react": "^17.0.37",
     "react": "^17.0.2"
   }
 }

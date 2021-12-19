@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/utilities",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Common utility functions.",
   "type": "module",
   "main": "dist/utilities.js",

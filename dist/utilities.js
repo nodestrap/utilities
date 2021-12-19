@@ -16,28 +16,28 @@ export const isTypeOf = (element, funcComponent) => {
                                 ||
                                     (element.type.prototype instanceof funcComponent)))));
 };
-export const setRef = (elmRef, elm) => {
-    if (elmRef) {
-        if (typeof (elmRef) === 'function') {
-            elmRef(elm);
+export const setRef = (ref, value) => {
+    if (ref) {
+        if (typeof (ref) === 'function') {
+            ref(value);
         }
         else {
-            elmRef.current = elm;
+            ref.current = value;
         } // if
     } // if
 };
-const isSingleValue = (num) => (typeof (num) === 'string') || (Array.isArray(num) && (num.length === 1));
-export const parseNumber = (num) => {
-    if (typeof (num) === 'number')
-        return num;
-    if (!num)
+const isSingleValue = (expression) => (typeof (expression) === 'string') || (Array.isArray(expression) && (expression.length === 1));
+export const parseNumber = (expression) => {
+    if (typeof (expression) === 'number')
+        return expression;
+    if (!expression)
         return null;
-    if (!isSingleValue(num))
+    if (!isSingleValue(expression))
         return null;
-    if (!num)
+    if (!expression)
         return null;
-    num = Number.parseFloat(num);
-    if (isNaN(num))
+    expression = Number.parseFloat(expression);
+    if (isNaN(expression))
         return null;
-    return num;
+    return expression;
 };
